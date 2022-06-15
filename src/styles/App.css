@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+html, body, #root {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-color: #222;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+#App {
+    width: 500px;
+    margin: auto;
+}
+
+@media (max-width: 500px) {
+    #App {
+        width: 100%;
+    }
+}
+
+.Title {
+    text-align: center;
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+.Container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.AddTodo {
+    width: 100%;
+    padding: 8px 4px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    border: none;
+    border-bottom: 2px #bbb solid;
+    box-sizing: border-box;
+    background: none;
+    color: white;
+}
+
+.Todo_List {
+    margin: 4px;
+}
+
+.Todo_Button {
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.Todo_Button:disabled {
+    border: 1px solid #aaaaaa;
+    color: white;
+    border-radius: 3px;
+}
+
+.Todo_Footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 8px;
+}

@@ -1,0 +1,36 @@
+.TodoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bbb;
+    padding: 4px 0;
+}
+
+.TodoItem_Input {
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.TodoItem_Input:disabled {
+    color: white;
+}
+
+.TodoItem_Status {
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.TodoItem_Status_Done {
+    background-color: #0a0;
+}
+
+.TodoItem_Status_Cancel {
+    background-color: #f00;
+}
