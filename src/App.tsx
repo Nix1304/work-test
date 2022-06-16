@@ -53,6 +53,7 @@ const App = () => {
             <div className="Container">
                 <div className="Todo_Header">
                     <input
+                        data-testid={'AddTodo'}
                         className={'AddTodo'}
                         placeholder={'Add new task'}
                         type="text"
@@ -62,7 +63,7 @@ const App = () => {
                     />
                 </div>
 
-                <div className="Todo_List">
+                <div className="Todo_List" data-testid={'Todo_List'}>
                     {todos.filter(filterFunc).map(value => (
                         <TodoItem
                             todoItem={value}

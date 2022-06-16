@@ -40,7 +40,7 @@ const TodoItem = ({ todoItem, changeTodoCb, deleteTodoCb }: Props) => {
     return (
         <div className={'TodoItem'}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
-                <div className={`TodoItem_Status TodoItem_Status_${status}`} onClick={changeStatus}/>
+                <div className={`TodoItem_Status TodoItem_Status_${status}`} onClick={changeStatus} data-testid={'ChangeStatus'}/>
                 <input
                     className={'TodoItem_Input'}
                     style={{ textDecoration: isDone ? 'none' : 'line-through', color: isDone ? 'white' : '#ccc' }}
